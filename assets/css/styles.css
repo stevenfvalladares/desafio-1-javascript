@@ -1,0 +1,21 @@
+.card {
+    border: 1px solid lightgray;
+}
+
+.card img {
+    width: 270px;
+    height: 270px;
+    margin-bottom: -50px;
+}
+
+.form-outline .form-control {
+    background: white;
+}
+
+.form-select {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, .6);
+    padding: 0.33em 0.75em;
+}

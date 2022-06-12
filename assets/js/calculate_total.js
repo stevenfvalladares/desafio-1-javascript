@@ -15,8 +15,11 @@ function calculateTotal() {
     total = price * parseInt(quantity.value)
 
     if (isNaN(parseInt(quantity.value))) {
-        alert('Es necesario introducir un número válido')
-    } else {
+        alert('Es necesario ingresar un número')
+    } else if (parseInt(quantity.value) === 0) {
+        alert('El número ingresado debe ser igual o mayor a 1')
+    }
+     else {
         document.getElementById('total').innerHTML = ' '.concat(Intl.NumberFormat('de-DE').format(total))
         document.getElementById('selected_quantity').innerHTML = ' '.concat(quantity.value)
     }
